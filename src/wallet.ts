@@ -14,10 +14,12 @@ const {
 
 const LAMPORTS_PER_SOL = 1000000000;
 
-const connection = new web3.Connection(
-  web3.clusterApiUrl("devnet"),
-  "confirmed"
-);
+// const connection = new web3.Connection(
+//   web3.clusterApiUrl("devnet"),
+//   "confirmed"
+// );
+
+const connection = new Connection("http://localhost:8899");
 
 program
   .name("my-cli")
